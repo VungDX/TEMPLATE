@@ -1,0 +1,91 @@
+.post-create {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: .75rem;
+    border-radius: .25rem;
+    background: #fff;
+    border: 1px solid var(--clr-light-100);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .10);
+    &-title {
+        font-weight: 700;
+        font-size: 1rem;
+        margin: 0 0 .5rem 0;
+        color: var(--clr-black);
+    }
+    &-header {
+        display: flex;
+        &-thumb {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+        &-editor {
+            width: 100%;
+            margin-left: .5rem;
+            padding: .25rem .65rem .25rem 0;
+            border-radius: 20px;
+            font-size: .95rem;
+            background: transparent;
+            border: 1px solid transparent;
+            transition: all var(--transition) linear;
+            overflow: auto;
+            &:empty::before {
+                cursor: text;
+                color: #888;
+                content: attr(placeholder);
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &-action {
+        display: flex;
+        margin-top: .5rem;
+        margin-left: 2.2rem;
+        align-items: center;
+        justify-content: space-between;
+        &-handle {
+            display: flex;
+            &-gif,
+            &-img, 
+            &-emoji {
+                margin-right: .25rem;
+            }
+            &-icon {
+                width: 35px;
+                height: 35px;
+                display: grid;
+                font-size: 1.1rem;
+                border-radius: 50%;
+                place-items: center;
+                color: var(--clr-black);
+                transition: all var(--transition) linear;
+                &:hover {
+                    cursor: pointer;
+                    background: var(--clr-light);
+                }
+            }
+        }
+        &-submit {
+            button {
+                cursor: pointer;
+                color: #fff;
+                border-radius: 20px;
+                font-size: .9rem;
+                padding: .15rem 1rem;
+                background: #7289da;
+                border: 1px solid #7289da;
+                transition: all var(--transition) ease-in-out;
+                &:hover {
+                    background: #687dc9;
+                    border: 1px solid #687dc9;
+                    box-shadow: 0 0 0 .25rem #687dc930;
+                }
+                &:active {
+                    transform: scale(.85);
+                }
+            }
+        }
+    }
+}

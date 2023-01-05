@@ -1,0 +1,26 @@
+.post-sayhi {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: .5rem;
+    padding: .75rem;
+    border-radius: .25rem;
+    background: #fff;
+    border: 1px solid var(--clr-light-100);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .10);
+    display: flex;
+    align-items: center;
+    &-img {
+        width: 50px;
+    }
+    &-content {
+        margin-left: .5rem;
+        &-title {
+            font-size: .9rem;
+            font-weight: bold;
+        }
+        &-info {
+            font-size: .8rem;
+            color: var(--clr-black);
+        }
+    }
+}

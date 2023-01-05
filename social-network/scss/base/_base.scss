@@ -1,0 +1,19 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.65;
+    text-align: left;
+    color: var(--clr-black-300);
+    background: rgb(242, 242, 243);
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+}

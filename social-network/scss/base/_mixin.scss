@@ -1,0 +1,16 @@
+@mixin scrollbarX($h, $track, $thumb, $thumbHover) {
+    &::-webkit-scrollbar {
+        height: $h;
+    }
+    &::-webkit-scrollbar-track {
+        background: $track;
+        border-radius: 3rem;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $thumb; 
+        border-radius: 3rem;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: $thumbHover; 
+    }
+}

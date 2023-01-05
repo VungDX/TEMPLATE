@@ -1,0 +1,64 @@
+@media screen and (max-width: 500px) {
+    .header-nav {
+        padding: 0 .5rem;
+        &-menu-item-name {
+            display: none;
+        }
+        &-menu-item.menu-item-user:hover {
+            .header-nav-menu-item-name {
+                display: block;
+            }
+        }
+    }
+    .container-main-left {
+        padding: 0;
+        .post,
+        .post-sayhi,
+        .post-create {
+            width: calc(100% - 1rem);
+            // border-radius: 0;
+            // padding: .35rem .5rem;
+            // border: 1px solid #fff;
+            // box-shadow: none;
+        }
+        .post-create {
+            margin-top: .5rem;
+            border: 1px solid var(--clr-light-100);
+        }
+        // .post,
+        // .post-sayhi {
+        //     border-top: 1px solid var(--clr-light-100);
+        //     border-bottom: 1px solid var(--clr-light-100);
+        // }
+        .post-thumb-img {
+            max-height: 250px;
+        }
+        .post.post-hot {
+            border: 2px solid #ed5e2f;
+        }
+    }
+    .container {
+        &-modal { 
+            &-theme {
+                min-width: 95%!important;
+                max-width: 95%!important;
+                &-content {
+                    width: 100%;
+                    overflow: hidden;
+                    &:hover {
+                        overflow-x: scroll;
+                        @include scrollbarX(5px, transparent, #ccc, #a8a8a8);
+                    }
+                    &-item {
+                        display: block;
+                        margin-right: .5rem;
+                        min-width: 150px!important;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

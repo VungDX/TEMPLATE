@@ -1,0 +1,82 @@
+.area-box {
+    padding: .75rem;
+    border-radius: .25rem;
+    background: #fff;
+    margin-bottom: .5rem;
+    border: 1px solid var(--clr-light-100);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .10);
+    &-title {
+        color: var(--clr-black);
+        font-size: .8rem;
+        font-weight: bold;
+        padding-bottom: .25rem;
+        margin-bottom: .25rem;
+        text-transform: uppercase;
+        border-bottom: 1px solid var(--clr-light-100);
+    }
+    &-container {
+        &-item {
+            display: flex;
+            align-items: center;
+            padding: .35rem;
+            border-radius: .25rem;
+            transition: all var(--transition) linear;
+            &:hover {
+                cursor: default;
+                background: var(--clr-light);
+            }
+            &-img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            &-page,
+            &-group,
+            &-user {
+                display: flex;
+                flex-direction: column;
+                margin-left: .5rem;
+                &-name {
+                    display: inline-block;
+                    max-width: 110px;
+                    white-space: nowrap; 
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    height: 20px;
+                    font-size: .9rem;
+                    font-weight: bold;
+                    color: var(--clr-black-100);
+                }
+                &-desc {
+                    color: var(--clr-light-500);
+                    height: 20px;
+                    font-size: .75rem;
+                }
+            }
+            &-request {
+                margin-left: auto;
+                button {
+                    cursor: pointer;
+                    color: #fff;
+                    border-radius: 20px;
+                    font-size: .8rem;
+                    height: 25px;
+                    padding: 0 .5rem;
+                    line-height: 20px;
+                    background: #7289da;
+                    border: 1px solid #7289da;
+                    transition: all var(--transition) ease-in-out;
+                    &:hover {
+                        background: #687dc9;
+                        border: 1px solid #687dc9;
+                        box-shadow: 0 0 0 .25rem #687dc930;
+                    }
+                    &:active {
+                        transform: scale(.85);
+                    }
+                }
+            }
+        }
+    }
+}

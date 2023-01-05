@@ -1,0 +1,235 @@
+[data-theme="dark"] {
+    body,
+    #app {
+        background: #131313;
+    }
+    .header {
+        background: #212121;
+        border-bottom: 1px solid #292929;
+        &-nav {
+            &-brand {
+                color: #fff;
+            }
+            &-search-input {
+                color: #fff;
+                background: #121212;
+                border: 1px solid #121212;
+                &:focus {
+                    background: #121212;
+                    border: 1px solid #555;
+                    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .05);
+                }
+            }
+            &-menu-item-icon,
+            &-menu-item.menu-item-user { 
+                color: #e8e8e8;
+                &:hover {
+                    color: #e8e8e8;
+                    background: #343434;
+                    border: 1px solid #343434;
+                }
+            }
+            &-modal {
+                &-search {
+                    color: #d8d8d8;
+                    background: #212121;
+                    &-input {
+                        background: #121212;
+                        border: 1px solid #121212;
+                        &:focus {
+                            background: #121212;
+                            border: 1px solid #555;
+                            box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .05);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .post,
+    .post-sayhi,
+    .post-create {
+        background: #212121;
+        border: 1px solid #292929;
+    }
+    .post {
+        &-header {
+            &-user-info-name {
+                color: #ddd;
+            }
+            &-handle-icon,
+            &-user-info-tagsname {
+                color: #999;
+            }
+            &-handle-icon:hover {
+                background: #343434;
+            }
+        }
+        &-content {
+            color: #ddd;
+        }
+        &-action {
+            border-top: 1px solid #292929;
+            &-item:nth-child(1):hover {
+                background: rgba(218, 81, 124, 0.125)
+            }
+            &-item:nth-child(2):hover {
+                background: rgba(81, 218, 150, 0.125)
+            }
+            &-item:nth-child(3):hover {
+                background: rgba(81, 118, 218, 0.125)
+            }
+            &-item-icon {
+                color: #777;
+            }
+            &-item-count {
+                color: #777;
+            }
+        }
+    }
+    .post-create {
+        &-title {
+            color: #ddd;
+        }
+        &-header-editor {
+            color: #fff;
+            background: transparent;
+            border: 1px solid transparent;
+            &:empty::before {
+                color: #999;
+            }
+            &:focus {
+                box-shadow: none;
+                border: 1px solid transparent;
+            }
+        }
+        &-action-handle-icon {
+            color: #888;
+            &:hover {
+                color: #d8d8d8;
+                background: #282828;
+            }
+        }
+    }
+    .post-sayhi {
+        &-content-title {
+            color: #ddd;
+        }
+        &-content-info {
+            color: #999;
+        }
+    }
+    .post-comment {
+        border-top: 1px solid #292929;
+        &-item-header-user-info-name {
+            color: #e8e8e8;
+        }
+        &-item-header-user-info-tagsname {
+            color: #999;
+        }
+        &-item-content {
+            color: #ddd;
+            background: #323232;
+        }
+        &-item-header-handle-icon {
+            color: #999;
+            &:hover {
+                background: #343434;
+            }
+        }
+    }
+    .area-box {
+        background: #212121;
+        border: 1px solid #292929;
+        &-container-item:hover {
+            background: #292929;
+        }
+        &-title {
+            color: #e8e8e8;
+            border-bottom: 1px solid #313131;
+        }
+        &-container-item-page,
+        &-container-item-group,
+        &-container-item-user {
+            &-name {
+                color: #e8e8e8;
+            }
+            &-tagsname {
+                color: #999;
+            }
+        }
+    }
+    .container {
+        &-side {
+            &-menu-item {
+                color: #bfbfbf;
+                &-icon {
+                    color: #bfbfbf;
+                }
+                &:hover {
+                    background: #343434;
+                }
+            }
+        }
+        .container-modal-theme {
+            background: #131313;
+            border: 1px solid #212121;
+            &-header {
+                color: #e8e8e8;
+            }
+            &-intro {
+                color: #999;
+            }
+            &-content {
+                &-item {
+                    border-color:#212121;
+                    &.item-active {
+                        border-color: #4e4e4e;
+                    }
+                    &-choose div {
+                        color: #999;
+                    }
+                }
+            }
+            &-handle {
+                .btn.btn-back {
+                    color: #777;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .container.container-side-active {
+            .container-side {
+                background: #212121;
+                border-right: 1px solid #292929;
+            }
+        }
+        .container-side {
+            background: #212121;
+            border-right: 1px solid #292929;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .container-main-left {
+            .post,
+            .post-sayhi,
+            .post-create {
+                padding: .35rem .5rem;
+                border: 1px solid #292929;
+            }
+        }
+        .container {
+            &-modal { 
+                &-theme {
+                    &-content {
+                        &:hover {
+                            overflow-x: scroll;
+                            @include scrollbarX(5px, transparent, #292929, #343434);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

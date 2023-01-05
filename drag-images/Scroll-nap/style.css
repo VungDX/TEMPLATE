@@ -1,0 +1,9 @@
+.section {
+    /* Trước đây chưa có Flexbox thì white-space: nowwrap; để làm cho các ptu nằm trên cùng 1 hàng */
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .section__item {
+    scroll-snap-align: start;
+  }

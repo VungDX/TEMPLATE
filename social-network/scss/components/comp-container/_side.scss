@@ -1,0 +1,44 @@
+&-side {
+    user-select: none;
+    position: fixed;
+    top: 51px;
+    width: 280px;
+    height: 100%;
+    transition: width .25s linear;
+    &-menu {
+        padding: .5rem;
+        &-item {
+            position: relative;
+            height: 42px;
+            display: flex;
+            margin-bottom: .25rem;
+            border-radius: .2rem;
+            transition: background var(--transition) linear;
+            &:hover {
+                cursor: pointer;
+                background: var(--clr-light-100);
+            }
+            &-icon {
+                display: grid;
+                place-items: center;
+                width: 42px;
+                height: 42px;
+                font-size: 1.1rem;
+                color: var(--clr-black);
+            }
+            &-name {
+                display: inline-flex;
+                line-height: 42px;
+                font-size: .9rem;
+                width: calc(100% - 40px);
+            }
+            &-count {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                font-size: .85rem;
+                color: rgb(134, 131, 132);
+            }
+        }
+    }
+}

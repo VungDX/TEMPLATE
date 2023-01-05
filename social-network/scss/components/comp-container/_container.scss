@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    max-width: 1300px;
+    height: calc(100% - 51px);
+    margin: 0 auto;
+    @import './side';
+    @import './main';
+    @import './modal';
+}
